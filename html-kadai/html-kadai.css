@@ -11,20 +11,15 @@ header{
 }
 
 main{
-  width: 100%;
-  margin: 50px 0;
-}
-
-.box{
   width: 960px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
-  justify-content: center;
 }
 
 .contents{
   width: 300px;
   margin-right: 30px;
+  padding: 10px;
   background-color: #EEEEEE;
   position: relative;
 }
@@ -36,12 +31,13 @@ main{
 span{
   background-color: #FF9A4B;
   position: absolute;
+  top: 0;
+  left: 0;
   color: #EEEEEE;
 }
 
 .image1{
   height: 150px;
-  margin: 10px 10px 0 10px;
   background-image: url(img/flow01.png);
   background-size: cover;
   background-position: bottom;
@@ -49,7 +45,6 @@ span{
 
 .image2{
   height: 150px;
-  margin: 10px 10px 0 10px;
   background-image: url(img/flow02.png);
   background-size: cover;
   background-position: bottom;
@@ -57,14 +52,13 @@ span{
 
 .image3{
   height: 150px;
-  margin: 10px 10px 0 10px;
   background-image: url(img/flow03.png);
   background-size: cover;
   background-position: bottom;
 }
 
-h3{
-  margin: 15px 0 5px 0;
+.title{
+  margin: 15px 0 5px;
 }
 
 footer{
@@ -74,7 +68,7 @@ footer{
 }
 
 @media screen and (max-width:768px) {
-  .box {
+  main {
     width: 90%;
     display: block;
   }
